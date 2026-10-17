@@ -1,0 +1,16 @@
+{
+  "name": "slopbucket",
+  "owner": {
+    "name": "Adam DePollo"
+  },
+  "metadata": {
+    "description": "Adam DePollo's agent profiles, their reference files, and plugins."
+  },
+  "plugins": [
+    {
+      "name": "plumber",
+      "source": "./plugins/plumber",
+      "description": "The Plumber: a senior DevOps subagent that keeps CI cheap on Actions minutes."
+    }
+  ]
+}

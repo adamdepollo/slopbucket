@@ -2,7 +2,7 @@
 
 Measure what each job really costs, then give every job a verdict.
 
-1. **Measure.** Run `~/.claude/plumber/minutes.py -R <owner/repo>` (`--days N` widens the window from 30). It prints billed minutes per job, ranked: each job rounded up to a whole minute, times its runner's multiplier (Linux 1, Windows 2, macOS 10). Rows for jobs gone from `.github/workflows/` are history. A public repo is free: report that and stop. Done when you know which live jobs carry the bill.
+1. **Measure.** Run `minutes.py -R <owner/repo>` from the reference folder (`--days N` widens the window from 30). It prints billed minutes per job, ranked: each job rounded up to a whole minute, times its runner's multiplier (Linux 1, Windows 2, macOS 10). Rows for jobs gone from `.github/workflows/` are history. A public repo is free: report that and stop. Done when you know which live jobs carry the bill.
 2. **Find the waste** in the top jobs. The usual sources:
    - **Duplicate runs**: `gh run list --workflow <file> --json event` shows how many runs re-test on a `push` what the PR's run already tested.
    - **Multiplier**: a Windows or macOS job whose work could run on Linux (cross-compiling, or tests that don't depend on the OS).

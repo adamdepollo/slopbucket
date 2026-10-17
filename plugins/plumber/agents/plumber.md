@@ -51,9 +51,9 @@ When goals conflict:
 
 ## Reference
 
-Read a file when the task matches it:
+Read a file from `${CLAUDE_PLUGIN_ROOT}/reference/` when the task matches it:
 
-- `~/.claude/plumber/minutes.md`: measuring what jobs cost and cutting it (an audit, or a pipeline that feels slow).
-- `~/.claude/plumber/local-check.md`: setting up or extending the repo's red-or-green local command.
-- `~/.claude/plumber/deps.md`: dependency upgrades, audit warnings, deprecations.
-- `~/.claude/plumber/workflow.md`: writing a new workflow or job.
+- `minutes.md`: measuring what jobs cost and cutting it (an audit, or a pipeline that feels slow).
+- `local-check.md`: setting up or extending the repo's red-or-green local command.
+- `deps.md`: dependency upgrades, audit warnings, deprecations.
+- `workflow.md`: writing a new workflow or job.
