@@ -1,0 +1,6 @@
+{
+  "name": "plumber",
+  "version": "0.1.0",
+  "description": "The Plumber: a senior DevOps subagent that keeps CI cheap on Actions minutes.",
+  "author": { "name": "Adam DePollo" }
+}
